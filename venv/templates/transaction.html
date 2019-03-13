@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <link rel="stylesheet" href='/static/design.css'/>
+</head>
+<body>
+
+    <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a class="active" href="{{ url_for('transaction')}}">New Transaction</a></li>
+        <li><a href="{{ url_for('viewTransactions')}}">View Transactions</a></li>
+        <li><a href="{{ url_for('monthReview')}}">Monthly Review</a></li>
+        <li style="float:right"><a href="{{ url_for('login')}}">logout</a></li>
+    </ul>
+
+    <div>
+        <h1>Add transaction here</h1>
+        <form>
+            From:
+            <br>
+            <select>
+                <option value=""></option>
+                <option value="Adam">Adam</option>
+            </select>
+            <br>
+            To:
+            <br>
+            <select>
+                <option value=""></option>
+                <option value="Nick">Nick</option>
+            </select>
+            <br>
+            <input type="text" placeholder="$10.00" name="amount">
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

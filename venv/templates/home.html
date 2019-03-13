@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href='/static/design.css'/>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('transaction')}}">New Transaction</a></li>
+        <li><a href="{{ url_for('viewTransactions')}}">View Transactions</a></li>
+        <li><a href="{{ url_for('monthReview')}}">Monthly Review</a></li>
+        <li style="float:right"><a href="{{ url_for('login')}}">logout</a></li>
+    </ul>
+
+    <div>
+        <h1>Home Page</h1>
+    </div>
+
+</body>
+</html>
